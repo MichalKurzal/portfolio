@@ -25,6 +25,18 @@ export class AppComponent implements OnInit{
   })
   .setClassToggle('.div1' ,'show')
   .addTo(controller)
+
+  var scene3 = new Scrollmagic.Scene({
+    triggerElement: '.div2'
+  })
+  .setClassToggle('.div2' ,'show')
+  .addTo(controller)
+
+  var scene4 = new Scrollmagic.Scene({
+    triggerElement: '.div3'
+  })
+  .setClassToggle('.div3' ,'show')
+  .addTo(controller)
   }
   resize(){
 console.log('resize');

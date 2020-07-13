@@ -1,65 +1,134 @@
 <div id="imgdiv">
- <img id='img1'  [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth"src='assets/watercolor.jpg'>
+ <img id='img1'  [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth"src='assets/sunrise.jpg'>
  <div class="centered">Michal Kurzal Portfolio</div>
 </div>
 
 <mat-divider></mat-divider>
 
 <div class="main">
-  <a href="#div1">
-  <mat-card class="example-card"   [ngStyle]="{'max-width.px':maxwidth}" >
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
 
-  </mat-card>
-</a>
-  <mat-card class="example-card" [ngStyle]="{'max-width.px':maxwidth}">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
+  <div [ngStyle]="{'width.px':maxwidth}">
+    <a href="#div1">
+    <mat-card class="example-card"    >
+      <mat-card-header>
+    
+        <mat-card-title>My Knowledge</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="cardimg" src="assets/brain.png" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp">
+       The List of my Skills
+        </p>
+      </mat-card-content>
+  
+    </mat-card>
+  </a>
+</div>
 
-  </mat-card>
-  <mat-card class="example-card" [ngStyle]="{'max-width.px':maxwidth}">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
+ <div [ngStyle]="{'width.px':maxwidth}">
+  <a href="#div2">
+    <mat-card class="example-card" >
+      <mat-card-header>
+       
+        <mat-card-title>My Projects</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="cardimg" src="assets/storyboard.png" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp">
+     The List of my projects
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </a>
+ </div> 
 
-  </mat-card>
+<div [ngStyle]="{'width.px':maxwidth}">
+  <a href="#div3">
+    <mat-card class="example-card" >
+      <mat-card-header>
+       
+        <mat-card-title>My Education</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="cardimg" src="assets/certificate.png" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp">
+       About my education
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </a>
+</div>
+  
 </div>
 <mat-divider></mat-divider>
 <div class="div1" id="div1" [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth">
-  <h1>My Knowledge</h1>
+
+  <div class="grid">
+    <h1>My Knowledge</h1>
+    <h2>My Knowledge</h2>
+      <p class="text1">
+        Hi, my name is Michal and I am a Javascript developer. 
+        I have solid skills in Javascript, Typscript and many Javascript frameworks like Angular. 
+I have also expiriences in mobile Ionic Apps Development. 
+My Hobbies are OpenGL and WebGL 
+      </p>
+      <div id="col2">
+        <div class="divchip">
+          <p class="text2">
+            Web Development Skills
+               </p>
+               <mat-chip-list aria-label="Fish selection">
+                 <mat-chip  color="primary" selected>HTML</mat-chip>
+                 <mat-chip>CSS</mat-chip>
+                 <mat-chip>SCSS</mat-chip>
+                 <mat-chip color="accent" selected>Javascript</mat-chip>
+                 <mat-chip color="accent" selected>TypeScript</mat-chip>
+                 <mat-chip>Node.js</mat-chip>
+                 <mat-chip color="primary" selected>npm</mat-chip>
+                 <mat-chip color="primary" selected>Responsive Design</mat-chip>
+                 <mat-chip color="accent" selected>Angular</mat-chip>
+                 <mat-chip color="primary" selected>Front-End Development</mat-chip>
+                 <mat-chip color="accent" selected>Back-End Development</mat-chip>
+                 <mat-chip color="primary" selected>CMS</mat-chip>
+                 <mat-chip color="accent" selected>Wordpress</mat-chip>
+               </mat-chip-list>
+        </div>
+     <div class="divchip">  <p class="text2">
+      Mobile Apps Development
+        </p>
+        <mat-chip-list aria-label="Fish selection">
+          <mat-chip>Ionic</mat-chip>
+          <mat-chip>Cordova</mat-chip>
+          <mat-chip color="primary" selected>Android Studio</mat-chip>
+          <mat-chip color="accent" selected>Android</mat-chip>
+          <mat-chip>Material Design</mat-chip>
+          <mat-chip color="primary" selected>Hybrid Apps</mat-chip>
+          <mat-chip color="accent" selected>Nativ Apps</mat-chip>
+          <mat-chip> Multi-Touch Gestures</mat-chip>
+        </mat-chip-list>
+      </div>
+    <div class="divchip">
+      <p class="text2">
+        Computer programming
+      </p>
+      <mat-chip-list aria-label="Fish selection">
+        <mat-chip>Microsft Visual Studio</mat-chip>
+        <mat-chip>C#</mat-chip>
+        <mat-chip color="primary" selected>Java</mat-chip>
+        <mat-chip color="accent" selected>C++</mat-chip>
+        <mat-chip>SQL</mat-chip>
+        <mat-chip>Databases</mat-chip>
+        <mat-chip color="primary" selected>Data Visualisation</mat-chip>
+        <mat-chip color="accent" selected>Git</mat-chip>
+        <mat-chip>Subversion</mat-chip>
+      </mat-chip-list>
+    </div>
+      
+    </div>
+  </div>
 </div>
 <div class="div2" id="div2" [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth">
   <h1>My Projects</h1>
