@@ -1,13 +1,16 @@
 <div id="imgdiv">
  <img id='img1'  [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth"src='assets/sunrise.jpg'>
  <div class="centered">Michal Kurzal Portfolio</div>
+ <a href="#main">
+ <img id="imgs" src='assets/scroll.png' [ngStyle]="{'left.px': centerW}">
+ </a>
 </div>
 
-<mat-divider></mat-divider>
 
-<div class="main">
 
-  <div [ngStyle]="{'width.px':maxwidth}">
+<div class="main" id="main">
+
+  <div [ngStyle]="{'width.px':maxwidth}" id="menucard1">
     <a href="#div1">
     <mat-card class="example-card"    >
       <mat-card-header>
@@ -26,7 +29,7 @@
   </a>
 </div>
 
- <div [ngStyle]="{'width.px':maxwidth}">
+ <div [ngStyle]="{'width.px':maxwidth}" id="menucard2">
   <a href="#div2">
     <mat-card class="example-card" >
       <mat-card-header>
@@ -44,7 +47,7 @@
   </a>
  </div> 
 
-<div [ngStyle]="{'width.px':maxwidth}">
+<div [ngStyle]="{'width.px':maxwidth}" id="menucard3">
   <a href="#div3">
     <mat-card class="example-card" >
       <mat-card-header>
@@ -131,7 +134,63 @@ My Hobbies are OpenGL and WebGL
   </div>
 </div>
 <div class="div2" id="div2" [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth">
-  <h1>My Projects</h1>
+  <h1 id="headerP">My Projects</h1>
+  <div id="cards">
+    <mat-card class="example-card2" >
+      <mat-card-header>
+       
+        <mat-card-title class="title">COVID-19 DatadashboardApp</mat-card-title>
+      
+      </mat-card-header>
+      <img mat-card-image class="cardimg2" src="assets/Screenshot.jpg" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp2">
+    Hybrid Ionic/Angular App for mobile devices(Android an iOS)<br>
+    D3.js Library is used to create Graphs
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card2" >
+      <mat-card-header>
+       
+        <mat-card-title>My Projects</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="cardimg2" src="assets/storyboard.png" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp">
+     The List of my projects
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card2" >
+      <mat-card-header>
+       
+        <mat-card-title>My Projects</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="cardimg2" src="assets/storyboard.png" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp">
+     The List of my projects
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card2" >
+      <mat-card-header>
+       
+        <mat-card-title>My Projects</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="cardimg2" src="assets/storyboard.png" alt="https://www.flaticon.com/authors/freepik">
+      <mat-card-content>
+        <p class="cardp">
+     The List of my projects
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+ 
 </div>
 <div class="div3" id="div3" [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth">
   <h1>My Education</h1>
