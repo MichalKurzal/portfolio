@@ -18,6 +18,7 @@
   .example-card2{
     background-image:linear-gradient(to right, rgb(67, 148, 128),#1A9CCC);
     margin: 5px;
+    text-align: center !important;
   }
   .main.show {
       opacity: 1;
@@ -140,6 +141,11 @@ a{
     margin-top: 0px;
     padding-top: 0px;
 }
+.title{
+    margin: auto;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 1000px) {
     .main{
@@ -199,11 +205,20 @@ a{
     .example-card2{
         max-width: 150px;
     }
-    mat-card-title{
-        font-size: 12px !important; 
+    p{
+        font-size: 13px !important; 
     }
     .cardimg2{
       max-width: 100px;
     }
  }
+
+  #img1{
+    display: block;
+    /*max-width:230px;*/
+    max-height:300px;
+    width: 100%;
+    height: auto;
+
+  }
   }

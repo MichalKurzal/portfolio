@@ -43,7 +43,7 @@ export class AppComponent implements OnInit{
 console.log('resize');
 
 let h = window.innerHeight;
-let w = window.innerWidth;
+let w = window.innerWidth -20;
 document.getElementById('img1').style.height = h+'px';
 document.getElementById('img1').style.width = w+'px';
 document.getElementById('div1').style.height = h+'px';
