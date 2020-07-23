@@ -14,11 +14,14 @@ export class AppComponent implements OnInit{
   myInnerWidth;
   ngOnInit(){
   this.centerW = window.innerWidth /2 -10;
- this.maxwidth = window.innerWidth /3;
+  this.maxwidth = window.innerWidth /3;
   this.myInnerHeight = window.innerHeight;
   this.myInnerWidth = window.innerWidth-20;
+
   window.addEventListener('resize',this.resize);
+
   var controller = new Scrollmagic.Controller();
+
   var scene = new Scrollmagic.Scene({
     triggerElement: '.main'
   })
@@ -43,8 +46,8 @@ export class AppComponent implements OnInit{
   .setClassToggle('.div3' ,'show')
   .addTo(controller)
   }
+
   resize(){
-   
 console.log('resize');
 
 let h = window.innerHeight;
@@ -66,10 +69,12 @@ document.getElementById('menucard2').style.width = maxW+'px';
 document.getElementById('menucard3').style.width = maxW+'px';
 this.ngOnInit();
   }
+
   scroll = ()=>{
     let ele = document.getElementById('fdiv')
     console.log('legaö')
     console.log(ele)
     ele.scrollIntoView({block: "start"})
   }
+  
 }
