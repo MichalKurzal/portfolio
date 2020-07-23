@@ -58,4 +58,10 @@ document.getElementById('menucard2').style.width = this.maxwidth+'px';
 document.getElementById('menucard3').style.width = this.maxwidth+'px';
 this.ngOnInit();
   }
+  scroll = ()=>{
+    let ele = document.getElementById('fdiv')
+    console.log('legaö')
+    console.log(ele)
+    ele.scrollIntoView({block: "start"})
+  }
 }

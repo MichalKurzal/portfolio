@@ -194,8 +194,8 @@ My Hobbies are OpenGL and WebGL
 </div>
 <div class="div3" id="div3" [style.height.px]="myInnerHeight" [style.width.px]="myInnerWidth">
   <div class="grid">
-    <h1>My Knowledge</h1>
-    <h2>List of my Skills</h2>
+    <h1>My Education</h1>
+    <h2>List of my Hobbys</h2>
       <p class="text1">
         Hi, my name is Michal and I am a Javascript developer. 
         I have solid skills in Javascript, Typscript and many Javascript frameworks like Angular. 
@@ -205,36 +205,36 @@ My Hobbies are OpenGL and WebGL
       <div id="col2">
         <div class="divchip">
           <p class="text2">
-            Web Development Skills
+         Favorite Games
                </p>
                <mat-chip-list aria-label="Fish selection">
-                 <mat-chip  color="primary" selected>HTML</mat-chip>
-                 <mat-chip>CSS</mat-chip>
-                 <mat-chip>SCSS</mat-chip>
-                 <mat-chip color="accent" selected>Javascript</mat-chip>
-                 <mat-chip color="accent" selected>TypeScript</mat-chip>
-                 <mat-chip>Node.js</mat-chip>
-                 <mat-chip color="primary" selected>npm</mat-chip>
-                 <mat-chip color="primary" selected>Responsive Design</mat-chip>
-                 <mat-chip color="accent" selected>Angular</mat-chip>
-                 <mat-chip color="primary" selected>Front-End Development</mat-chip>
-                 <mat-chip color="accent" selected>Back-End Development</mat-chip>
-                 <mat-chip color="primary" selected>CMS</mat-chip>
-                 <mat-chip color="accent" selected>Wordpress</mat-chip>
+                 <mat-chip  color="primary" selected>Assassin's Creed Series</mat-chip>
+                 <mat-chip>Deus Ex Series</mat-chip>
+                 <mat-chip>Watch Dogs Series</mat-chip>
+                 <mat-chip color="accent" selected>Mass Effect Series</mat-chip>
+                 <mat-chip color="accent" selected>No Man's Sky</mat-chip>
+                 <mat-chip>Far Cry Series</mat-chip>
+                 <mat-chip color="primary" selected>Destiny 2</mat-chip>
+                 <mat-chip color="primary" selected>The Outer Worlds</mat-chip>
+                 <mat-chip color="accent" selected>Age of Empires Series</mat-chip>
+                 <mat-chip color="primary" selected>Dragons Age Series</mat-chip>
+                 <mat-chip color="accent" selected>We Happy Few</mat-chip>
+                 <mat-chip color="primary" selected>Borderlands Series</mat-chip>
+                 <mat-chip color="accent" selected>GTA 5</mat-chip>
                </mat-chip-list>
         </div>
      <div class="divchip">  <p class="text2">
-      Mobile Apps Development
+     Music
         </p>
         <mat-chip-list aria-label="Fish selection">
-          <mat-chip>Ionic</mat-chip>
-          <mat-chip>Cordova</mat-chip>
-          <mat-chip color="primary" selected>Android Studio</mat-chip>
-          <mat-chip color="accent" selected>Android</mat-chip>
-          <mat-chip>Material Design</mat-chip>
-          <mat-chip color="primary" selected>Hybrid Apps</mat-chip>
-          <mat-chip color="accent" selected>Nativ Apps</mat-chip>
-          <mat-chip> Multi-Touch Gestures</mat-chip>
+          <mat-chip>Alice in Chains</mat-chip>
+          <mat-chip>Tool</mat-chip>
+          <mat-chip color="primary" selected>Interpol</mat-chip>
+          <mat-chip color="accent" selected>Blind Melon</mat-chip>
+          <mat-chip>Pearl Jam</mat-chip>
+          <mat-chip color="primary" selected>White Lies</mat-chip>
+          <mat-chip color="accent" selected>Stone Temple Pilots</mat-chip>
+          <mat-chip> Radiohead</mat-chip>
         </mat-chip-list>
       </div>
     <div class="divchip">
@@ -259,8 +259,6 @@ My Hobbies are OpenGL and WebGL
 </div>
 <footer id="fdiv">
   
-    <p>
-      Michal Kurzal
-    </p>
-  <p>Angular</p>
+  <a  (click)='scroll()' routerLink="/about" routerLinkActive="active">Legal Notice</a>
 </footer>
+<router-outlet></router-outlet>
