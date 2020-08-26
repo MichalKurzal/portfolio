@@ -1,1 +1,1 @@
-# www.michalkurzal.github.io
+# https://michalkurzal.github.io
